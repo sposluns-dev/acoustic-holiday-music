@@ -1,19 +1,19 @@
 import { BAND_NAME } from "./content";
+import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
-import Repertoire from "./components/Repertoire";
 import Contact from "./components/Contact";
 import "./styles.css";
 
 function App() {
     return (
         <>
+            <NavBar />
             <Hero />
             <main>
                 <About />
                 <Gallery />
-                <Repertoire />
                 <Contact />
             </main>
             <footer>© {new Date().getFullYear()} {BAND_NAME}</footer>
