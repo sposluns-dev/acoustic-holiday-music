@@ -22,7 +22,7 @@ a{color:inherit}
 .hero{text-align:center;background:#161110;color:#fff;overflow:hidden;
   /* --u = 1% of the title block's width; every title measurement below is a multiple of it, so the block scales as one unit */
   --u:calc(min(92vw,980px) / 100);--lift:calc(var(--u) * 14);padding:var(--lift) 0 0}
-.hero h1.arched{margin:0 0 calc(var(--u) * -5.5);font-family:Rye,Georgia,serif}
+.hero h1.arched{margin:0 0 calc(var(--u) * -5.5);font-family:Rye,Georgia,serif;font-weight:400}
 .hero h1.arched svg{display:block;width:100%;height:auto;overflow:visible}
 /* Logo matches the title: white fill with the same red drop shadow */
 .title-logo{display:block;margin:0 auto;height:calc(var(--u) * 8.5);width:auto;color:#fff;filter:drop-shadow(calc(var(--u) * .5) calc(var(--u) * .5) 0 #d6303a) drop-shadow(calc(var(--u) * .5) calc(var(--u) * .5) 0 rgba(120,20,28,.6))}

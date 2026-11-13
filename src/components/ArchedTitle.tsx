@@ -1,10 +1,26 @@
-/** Band name set on an upward arc, with the same layered red drop shadow as the other title text. */
+/**
+ * Band name set on an upward arc, with the same layered red drop shadow as the other title text.
+ *
+ * The arc is ~918 units long. The text is forced to an exact length (textLength) and placed by a
+ * fixed startOffset, so it always fits on the arc: phone browsers measure fonts differently, and
+ * text longer than its path gets its first/last letters dropped (and Safari ignores text-anchor
+ * on textPath).
+ */
 const ARC = "M60 255 A 900 900 0 0 1 940 255";
+const ARC_LENGTH = 917.6;
+const TEXT_LENGTH = 830;
 
 function Line({ text, dx, dy, fill }: { text: string; dx: number; dy: number; fill: string }) {
     return (
-        <text fill={fill} fontSize="112" transform={`translate(${dx} ${dy})`} textAnchor="middle">
-            <textPath href="#title-arc" startOffset="50%">{text}</textPath>
+        <text fill={fill} fontSize="94" transform={`translate(${dx} ${dy})`}>
+            <textPath
+                href="#title-arc"
+                startOffset={(ARC_LENGTH - TEXT_LENGTH) / 2}
+                textLength={TEXT_LENGTH}
+                lengthAdjust="spacingAndGlyphs"
+            >
+                {text}
+            </textPath>
         </text>
     );
 }
