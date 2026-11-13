@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 376 264" role="img" aria-label="The Kitchen Sink logo">
+  <title>The Kitchen Sink</title>
+  <!-- Every parallel line (and the arrow tip) sits on an even 56-unit pitch -->
+  <path d="M0 0 L0 224 L336 224 L336 0 L56 0 L56 168 L280 168 L280 56 L112 56 L112 112 L204 112" fill="none" stroke="currentColor" stroke-width="16" stroke-linejoin="miter" stroke-linecap="butt"/>
+  <polygon points="196,88 232,112 196,136" fill="currentColor"/>
+</svg>
