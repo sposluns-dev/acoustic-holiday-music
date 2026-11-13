@@ -12,7 +12,7 @@ function Line({ text, dx, dy, fill }: { text: string; dx: number; dy: number; fi
 export default function ArchedTitle({ text }: { text: string }) {
     return (
         <h1 className="arched" aria-label={text}>
-            <svg viewBox="0 20 1000 245" aria-hidden="true">
+            <svg viewBox="-70 20 1140 245" aria-hidden="true">
                 <defs><path id="title-arc" d={ARC} /></defs>
                 <Line text={text} dx={10} dy={10} fill="rgba(120,20,28,.6)" />
                 <Line text={text} dx={5} dy={5} fill="#d6303a" />
