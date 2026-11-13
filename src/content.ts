@@ -5,7 +5,6 @@ export const PRESENTS = "presents";
 export const SHOW_TITLE = "Acoustic Holiday Classics";
 
 export const text = {
-    heroEyebrow: "Text 1",
     heroTagline: "",
     heroButton: "Contact",
 
