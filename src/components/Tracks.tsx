@@ -18,7 +18,7 @@ export default function Tracks() {
                         ref={(el) => { if (el) players.current[i] = el; }}
                         controls
                         preload="none"
-                        src={`/audio/${t.file}`}
+                        src={`${import.meta.env.BASE_URL}audio/${t.file}`}
                         onPlay={(e) => pauseOthers(e.currentTarget)}
                     />
                 </li>
